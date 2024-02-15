@@ -18,11 +18,11 @@
 	</head>
 	<body>
 	<main>
-		<div class="content">
+		<div class="content text-center text-white">
 			<div class="container">
 				<h1>Billie Collinson</h1>
 				<div>
-					<p>If you want to send me a message, please just fill out the form below or email me directly at <a href="mailto:https://formsubmit.co/el/kikopa">billiecollinson@hotmail.co.uk</a></p>
+					<p>If you want to send me a message please fill out the form below or email me directly at <a href="mailto:billiecollinson@hotmail.co.uk" class="text-warning">billiecollinson@hotmail.co.uk</a></p>
 				</div>
 				<form id="contact" method="POST">
 					<div class="form-group">
@@ -43,8 +43,8 @@
 					</div>
 					<button type="submit" class="btn btn-lg btn-dark btn-block">Get in touch</button>
 				</form>
-				<div id="success" class="btn-lg text-center" style="display:none;">I've received your message and will look at it soon, thanks!</div>
-				<div id="error" class="btn-lg text-center" style="display:none;">There was an error sending your message, please try again</div>
+				<div id="success" class="btn-lg" style="display:none;">I've received your message and will look at it soon, thanks!</div>
+				<div id="error" class="btn-lg" style="display:none;">There was an error sending your message, please try again</div>
 			</div>
 			
 		</div>
@@ -55,7 +55,7 @@
 				$('#success, #error').hide();
 				$.ajax({
 					method: 'POST',
-					url: 'https://formsubmit.co/ajax/f17aa95170c4dfcea386aba428f1607c',
+					url: 'https://formsubmit.co/ajax/40a6936c9ecdee4d9e80fa417f15ccd8',
 					dataType: 'json',
 					accepts: 'application/json',
 					data: $(this).serialize(),
